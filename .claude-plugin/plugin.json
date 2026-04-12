@@ -1,0 +1,8 @@
+{
+  "name": "whatsgoingon",
+  "description": "Summarize notifications, grouped by sources and topics",
+  "version": "1.0.0",
+  "author": {
+    "name": "Pablo"
+  }
+}
