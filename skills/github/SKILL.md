@@ -1,7 +1,7 @@
 ---
 name: github
 description: Summarize GitHub notifications, grouping them by (repository, topic) and providing updates by group.
-allowed-tools: Bash(gh api *) Bash(gh auth *)
+allowed-tools: Bash(gh api *) Bash(gh auth *) Bash(for *)
 ---
 
 Goal: Summarize GitHub notifications, grouping them by (repository, topic) and providing updates by group.
