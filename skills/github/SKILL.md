@@ -14,8 +14,9 @@ Goal: Summarize GitHub notifications, grouping them by (repository, topic) and p
 
 # User provided input
 
-- Scope: Repositories or organizations to fetch notifications from.
-- Period: Time range for notifications (e.g., last 7 days).
+- Scope: [Optional, default: all] Repositories or organizations to fetch notifications from.
+- Period: [Optional, default: last 7 days] Time range for notifications (e.g., last 7 days).
+- Persistence target: [Optional, default: none] Whether to save the report in a markdown file (`markdown`) or a GitHub issue/PR comment (`comment at <URL>`) or not persisting it at all (`none`).
 
 # Sources
 
@@ -55,3 +56,19 @@ Group notifications by (repository, topic) with summary of each group theme, top
 ## Unclassified notifications
 
 Produce a similar table to that of grouped notifications, but for unclassified notifications.
+
+# Report persistence
+
+## Markdown file
+
+If `Persistence target` is set to `markdown`:
+
+Write down the report in markdown format to a file in the working directory with name: `github-report-<FROM>-<TO>.md` where `<FROM>` and `<TO>` are dates in `YYYY-MM-DD` format for the beginning and end of the reporting period.
+
+## GitHub issue or pull request
+
+If `Persistence target` is set to `comment at <URL>`:
+
+Write down the report as a comment in a GitHub issue or pull request at the specified URL.
+
+If no URL is provided, do nothing and just return the report in the output.
