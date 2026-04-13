@@ -55,7 +55,3 @@ Group notifications by (repository, topic) with summary of each group theme, top
 ## Unclassified notifications
 
 Produce a similar table to that of grouped notifications, but for unclassified notifications.
-
-# Memory
-
-- Store the list of all the notifications you have tracked (`tracked_notifications.md`) in a file under the project directory. It contains a list of links to the notification.
