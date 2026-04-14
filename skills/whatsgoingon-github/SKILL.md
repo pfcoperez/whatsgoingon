@@ -1,5 +1,5 @@
 ---
-name: github
+name: whatsgoingon-github
 description: Summarize GitHub notifications, grouping them by (repository, topic) and providing updates by group.
 allowed-tools: Bash(gh api *) Bash(gh auth *) Bash(for *)
 argument-hint: "[scope] [period] [persistence target]"
@@ -13,7 +13,7 @@ Goal: Summarize GitHub notifications, grouping them by (repository, topic) and p
 
 # Input
 
-# User provided input
+## User provided input
 
 - Scope: [Optional, default: all] Repositories or organizations to fetch notifications from.
 - Period: [Optional, default: last 7 days] Time range for notifications (e.g., last 7 days).
@@ -72,7 +72,7 @@ A pending comment is a comment that requires response from the authenticated use
 
 - Comments on Pull Requests open by the authenticated user.
 - Last comment where the authenticated user is mentioned.
-- Last comment on a conversation where the authencated user has actively participated. Specially if the conversation is started by the authenticated user.
+- Last comment on a conversation where the authenticated user has actively participated. Specially if the conversation is started by the authenticated user.
 
 # Report persistence
 
