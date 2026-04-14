@@ -57,6 +57,22 @@ Group notifications by (repository, topic) with summary of each group theme, top
 
 Produce a similar table to that of grouped notifications, but for unclassified notifications.
 
+## Pending comments
+
+Produce a table of pending comments that require user action, with the following columns:
+
+- Issue or Pull Request
+- Summary of the conversation
+- Last update timestamp
+- Probable requested action: e.g: If it was a question, what is asked? If it is a review comment, a summary of the requested changes. 
+- Last comment: With link to the comment
+
+A pending comment is a comment that requires response from the authenticated user. These are any of these:
+
+- Comments on Pull Requests open by the authenticated user.
+- Last comment where the authenticated user is mentioned.
+- Last comment on a conversation where the authencated user has actively participated. Specially if the conversation is started by the authenticated user.
+
 # Report persistence
 
 ## Markdown file
